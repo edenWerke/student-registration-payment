@@ -77,12 +77,14 @@
 // export default App;
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './layout/Register';
+import Login from './layout/Login';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
