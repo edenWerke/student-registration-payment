@@ -78,13 +78,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './layout/Register';
 import Login from './layout/Login';
+import Home from './layout/Home';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/" element={<Home/>} />
       </Routes>
     </BrowserRouter>
   );
